@@ -15,7 +15,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://dockerrepo-b5sj.onrender.com")  // Cambia "*" por tu dominio si es necesario
+                        .allowedOrigins("*")  // Cambia "*" por tu dominio si es necesario
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH");
             }
         };
